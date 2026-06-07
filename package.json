@@ -1,0 +1,21 @@
+{
+  "name": "expedientes-app",
+  "version": "1.0.0",
+  "description": "SaaS platform with AI Agent, payments via Stripe, and multimedia content creation",
+  "private": true,
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend",
+    "packages/mobile"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @expedientes/backend dev & yarn workspace @expedientes/frontend dev",
+    "build": "yarn workspace @expedientes/backend build && yarn workspace @expedientes/frontend build",
+    "test": "yarn workspace @expedientes/backend test && yarn workspace @expedientes/frontend test",
+    "lint": "yarn workspace @expedientes/backend lint && yarn workspace @expedientes/frontend lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.0.0"
+  }
+}
